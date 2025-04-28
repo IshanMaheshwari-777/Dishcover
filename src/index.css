@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #f5f5f5;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.container{
+  padding-left: 4%;
+  padding-right: 2.5%;
+}
+.loginbtn{
+  background: #FFF;
+  color: #000;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0.25px solid #000;
+
+  outline: 0;
+}
+.signupbtn{
+  background: #FF4B3E;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  /* background: #f67b8a;; */
+  color: #FFF;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+
+  outline: 0;
+}
+
+.explorebtn{
+  background: #FF4B3E;
+  /* background: #f67b8a;; */
+  color: #FFF;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+.searchbtn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* background: #f67b8a;; */
+  background: #FF4B3E;
+  color: #FFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbtn::before {
+  content: '🔍';
+  margin-right: 8px;
+  font-size: 16px;
+}
+.searchbar {
+  
+  background-color: #e2e2e2;
+   display: flex;
+  /* justify-content: space-between; */
+  align-items : center;
+  margin: 0 auto; 
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%; 
+}
+.inputsearch{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 7px;
+  width: 90%;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+}
+
