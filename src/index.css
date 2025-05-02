@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: white; */
 }
 html{
   scroll-behavior: smooth;
@@ -87,6 +88,7 @@ a{
   /* justify-content: space-between; */
   align-items : center;
   margin: 0 auto; 
+  margin-top: 78px;
   width: 100%;
   padding-left: 2%;
   padding-right: 2%; 
@@ -101,3 +103,65 @@ a{
   border: none;
 }
 
+  .keyselling {
+    background-color: #f3f4f6;
+    padding: 64px 0;
+  }
+  
+  .keyselling1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  
+  .keysellinginfo {
+    flex: 1 1 100%;
+    padding: 16px;
+  }
+  
+  .keysellinginfo h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .keysellinginfo p {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .keysellinginfo ul {
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  .keysellinginfo ul li {
+    margin-bottom: 8px;
+  }
+  
+  .keysellingimg {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .keysellingimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+  }
+  
+  @media (min-width: 768px) {
+    .keysellinginfo,
+    .keysellingimg {
+      flex: 1 1 50%;
+    }
+  }
+  
+
+  
