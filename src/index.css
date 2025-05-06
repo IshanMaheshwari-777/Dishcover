@@ -105,7 +105,8 @@ a{
 
   .keyselling {
     background-color: #f3f4f6;
-    padding: 64px 0;
+    padding: 64px 0; 
+    
   }
   
   .keyselling1 {
@@ -113,17 +114,20 @@ a{
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 64px;
+    padding-left: 20px;
   }
   
   .keysellinginfo {
     flex: 1 1 100%;
     padding: 16px;
+    
   }
   
   .keysellinginfo h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 16px;
+    /* margin-left: 20px; */
   }
   
   .keysellinginfo p {
@@ -164,4 +168,3 @@ a{
   }
   
 
-  

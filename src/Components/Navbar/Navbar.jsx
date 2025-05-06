@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
-
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
 
 const Navbar = () => {
   return (
@@ -15,8 +15,14 @@ const Navbar = () => {
         
       </ul>
       <ul>
-        <li><button className='loginbtn'>Login</button></li>
-        <li><button className='signupbtn'>Sign Up</button></li>
+      <SignedOut>
+        <SignInButton className='signupbtn' text='Sign in/Sign Up'/>
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+        {/* <li><button className='loginbtn'>Login</button></li>
+        <li><button className='signupbtn'>Sign Up</button></li> */}
       </ul>
     </nav>
   )
