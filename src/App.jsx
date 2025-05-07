@@ -1,24 +1,22 @@
-import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import Searchbar from './Components/Searchbar/Searchbar'
-import Carousel from './Components/Carousel/Carousel'
-import KeySelling from './Components/KeySelling/KeySelling'
-import Footer from './Components/Footer/Footer'
-const App = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Searchbar/>
-      <Hero/>
-      <Carousel/>
-      <KeySelling/> 
-      <Footer/>
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
 
-      
-     
-    </div>
-  )
+
+function App() {
+  return (
+    <Router>
+      <div>
+       
+        <Routes>
+    
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
