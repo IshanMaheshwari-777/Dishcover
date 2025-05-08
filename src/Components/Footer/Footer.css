@@ -21,6 +21,7 @@
   .footer-links {
     list-style: none;
     padding: 0;
+    text-align: center;
   }
   .footer-link {
     color: #a0aec0;

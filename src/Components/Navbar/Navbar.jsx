@@ -7,12 +7,12 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className='container'>
-      <a href=""><img src={logo} alt="" className='logo'/></a>
+      <a href="/home"><img src={logo} alt="" className='logo'/></a>
       <ul>
-        <li><NavLink to="/home">Home</NavLink></li>
-        <li><NavLink to="/about">About Us</NavLink></li>
-        <li><NavLink to="/recipes">Recipes</NavLink></li>
-        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/home" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Home</NavLink></li>
+        <li><NavLink to="/about" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>About Us</NavLink></li>
+        <li><NavLink to="/recipes" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Recipes</NavLink></li>
+        <li><NavLink to="/blog" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Blog</NavLink></li>
         
       </ul>
       <ul>
