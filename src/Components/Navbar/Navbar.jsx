@@ -2,16 +2,17 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton} from '@clerk/clerk-react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='container'>
       <a href=""><img src={logo} alt="" className='logo'/></a>
       <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><NavLink to="/home">Home</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
+        <li><NavLink to="/">Recipes</NavLink></li>
+        <li><NavLink to="/">Blog</NavLink></li>
         
       </ul>
       <ul>
