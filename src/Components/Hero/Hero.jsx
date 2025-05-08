@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Find Recipes with Ingredients You Already Have</h1>
         <p>Stop wondering what to cook! Enter your ingredients and discover delicious recipes tailored to what's in your kitchen.</p>
-        <button className='explorebtn'>Explore Recipes</button>
+        <button className='explorebtn'><a href="/recipes">Explore Recipes</a></button>
       </div>
       <div className="getintouchform">
         <h2 className='getintouchformheading'>Get in Touch</h2>

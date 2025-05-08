@@ -34,3 +34,16 @@ nav ul li:hover {
     color: #FF4B3E; 
 }
 
+/* Navbar.css */
+.nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-link.active {
+    /* font-weight: bold; */
+    color: #FF4B3E;
+    border-bottom: 2px solid #FF4B3E;
+  }
+  
