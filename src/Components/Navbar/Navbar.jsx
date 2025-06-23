@@ -1,33 +1,42 @@
-import React from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo.png'
-import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton} from '@clerk/clerk-react'
-import { NavLink } from 'react-router-dom'
+
+import React from 'react';
+import logo from '../../assets/logo.png';
+import { SignedIn, SignedOut, SignInButton, UserButton, SignUpButton } from '@clerk/clerk-react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='container'>
-      <a href="/home"><img src={logo} alt="" className='logo'/></a>
-      <ul>
-        <li><NavLink to="/home" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Home</NavLink></li>
-        <li><NavLink to="/about" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>About Us</NavLink></li>
-        <li><NavLink to="/recipes" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Recipes</NavLink></li>
-        <li><NavLink to="/blog" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Blog</NavLink></li>
-        
+    <nav className="w-full bg-white fixed top-0 left-0 z-10 py-3 shadow-md px-6 flex justify-between items-center">
+      <a href="/home">
+        <img src={logo} alt="Logo" className="w-24 hover:cursor-pointer" />
+      </a>
+      <ul className="hidden md:flex gap-6">
+        {['home', 'about', 'recipes', 'blog'].map((page) => (
+          <li key={page}>
+            <NavLink
+              to={`/${page}`}
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-[#FF4B3E] border-b-2 border-[#FF4B3E] pb-1'
+                  : 'text-gray-800 hover:text-[#FF4B3E] transition'
+              }
+            >
+              {page.charAt(0).toUpperCase() + page.slice(1).replace('-', ' ')}
+            </NavLink>
+          </li>
+        ))}
       </ul>
-      <ul>
-      <SignedOut>
-        <SignUpButton className='signupbtn' />
-        <SignInButton className='signupbtn' />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-        {/* <li><button className='loginbtn'>Login</button></li>
-        <li><button className='signupbtn'>Sign Up</button></li> */}
-      </ul>
+      <div className="flex gap-4">
+        <SignedOut>
+          <SignUpButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
+          <SignInButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

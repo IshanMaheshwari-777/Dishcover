@@ -1,59 +1,47 @@
-import React from 'react'
-import './Footer.css'
-import X from '../../assets/X-logo.jpeg'
-import Facebook from '../../assets/facebook-logo.jpeg'
-import LinkedIn from '../../assets/Linkedin-logo.jpeg'
-import Instagram from '../../assets/insta-logo.jpeg'
+// Footer.jsx
+import React from 'react';
+import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
+
 const Footer = () => {
   return (
-    <div>
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+        <div>
+          <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            {['Home', 'About Us', 'Recipes', 'Blog', 'Privacy Policy', 'Terms of Service'].map((link, i) => (
+              <li key={i}>
+                <a href={`/${link.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-white transition">
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
+        <div>
+          <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+          <ul className="space-y-2 text-gray-400">
+            <li>contact@Dishcover.com</li>
+            <li>+1 (555) 123-4567</li>
+          </ul>
+        </div>
 
-<footer className="footer">
-  <div className="container">
-    <div className="grid">
-      
-      <div>
-        <h3 className="footer-heading">Quick Links</h3>
-        <ul className="footer-links">
-          <li><a href="/home" className="footer-link">Home</a></li>
-          <li><a href="/about" className="footer-link">About Us</a></li>
-          <li><a href="/recipes" className="footer-link">Recipes</a></li>
-          <li><a href="/blog" className="footer-link">Blog</a></li>
-          <li><a href="" className="footer-link">Privacy Policy</a></li>
-          <li><a href="" className="footer-link">Terms of Service</a></li>
-        </ul>
-      </div>
-     
-      <div>
-        <h3 className="footer-heading">Contact Us</h3>
-        <ul className="footer-links">
-          <li className="footer-contact"><span>contact@Dishcover.com</span></li>
-          <li className="footer-contact"><span>+1 (555) 123-4567</span></li>
-        </ul>
-      </div>
-     
-      <div>
-        <h3 className="footer-heading">Follow Us</h3>
-        <div className="social-links">
-          <a href="https://facebook.com" className="social-icon"><img src={Facebook} alt="" /></a>
-          <a href="https://x.com/" className="social-icon"><img src={X} alt="" /></a>
-          <a href="https://www.linkedin.com/in/ishan-maheshwari-4b6154323/"  className="social-icon"><img src={LinkedIn} alt="" /></a>
-          <a href="https://instagram.com" className="social-icon"><img src={Instagram} alt="" /></a>
+        <div>
+          <h3 className="text-lg font-bold mb-4">Follow Us</h3>
+          <div className="flex gap-4 text-gray-400 text-xl">
+            <a href="https://facebook.com" className="hover:text-white transition"><FaFacebookF /></a>
+            <a href="https://x.com" className="hover:text-white transition"><FaXTwitter /></a>
+            <a href="https://linkedin.com" className="hover:text-white transition"><FaLinkedinIn /></a>
+            <a href="https://instagram.com" className="hover:text-white transition"><FaInstagram /></a>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div className="footer-copyright">
-      <p>© 2025 Dishcover. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+      <div className="text-center text-gray-500 mt-12 border-t border-gray-700 pt-6">
+        © 2025 Dishcover. All rights reserved.
+      </div>
+    </footer>
+  );
+};
 
-
-
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;
