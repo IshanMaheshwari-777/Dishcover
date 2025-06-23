@@ -10,22 +10,28 @@ const Navbar = () => {
       <a href="/home">
         <img src={logo} alt="Logo" className="w-24 hover:cursor-pointer" />
       </a>
+      
       <ul className="hidden md:flex gap-6">
-        {['home', 'about', 'recipes', 'blog'].map((page) => (
-          <li key={page}>
-            <NavLink
-              to={`/${page}`}
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-[#FF4B3E] border-b-2 border-[#FF4B3E] pb-1'
-                  : 'text-gray-800 hover:text-[#FF4B3E] transition'
-              }
-            >
-              {page.charAt(0).toUpperCase() + page.slice(1).replace('-', ' ')}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
+  {[
+    { name: 'Home', path: '/home' },
+    { name: 'About', path: '/about' },
+    { name: 'Recipes', path: '/recipes' },
+    { name: 'Blog', path: '/blog' }
+  ].map(({ name, path }) => (
+    <li key={path}>
+      <NavLink
+        to={path}
+        className={({ isActive }) =>
+          isActive
+            ? 'text-[#FF4B3E] border-b-2 border-[#FF4B3E] pb-1'
+            : 'text-gray-800 hover:text-[#FF4B3E] transition'
+        }
+      >
+        {name}
+      </NavLink>
+    </li>
+  ))}
+</ul>
       <div className="flex gap-4">
         <SignedOut>
           <SignUpButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
