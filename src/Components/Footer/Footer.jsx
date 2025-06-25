@@ -16,10 +16,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            {['Home', 'About Us', 'Recipes', 'Blog', 'Privacy Policy', 'Terms of Service'].map((link, i) => (
+            {['Home', 'About', 'Recipes', 'Blog'].map((link, i) => (
               <li key={i}>
                 <a
-                  href={`/${link.toLowerCase().replace(/ /g, '-')}`}
+                  href={`/${link.toLowerCase()}`}
                   className="text-gray-400 hover:text-white transition"
                 >
                   {link}
@@ -33,8 +33,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>contact@Dishcover.com</li>
-            <li>+1 (555) 123-4567</li>
+            <li>https://dishcover-lemon.vercel.app/home</li>
+            <li>+91 9058904238</li>
           </ul>
         </div>
 
