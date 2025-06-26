@@ -10,7 +10,7 @@ export async function getDishDetails(dishName) {
     const model = genAI.getGenerativeModel({model: "gemini-1.5-flash" });
 
     const prompt = `
-For the dish "${dishName}", provide:
+For the dish or ingredients "${dishName}", provide:
 1. Time needed to prepare and cook (in minutes)
 2. A complete list of ingredients with quantity
 3. A step-by-step recipe

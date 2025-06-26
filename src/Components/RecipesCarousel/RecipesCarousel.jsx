@@ -30,7 +30,7 @@ const RecipesCarousel = ({ onSelect }) => {
   };
 
   const handleSelect = (recipe) => {
-    onSelect(recipe);
+    onSelect({ ...recipe });
     setTimeout(() => {
       const detailsSection = document.getElementById('details');
       if (detailsSection) {
@@ -39,6 +39,12 @@ const RecipesCarousel = ({ onSelect }) => {
     }, 300);
   };
 
+  const isEnter = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleSearch();
+    }
+  }
   return (
     <div>
       {/* Search Bar */}
@@ -49,6 +55,7 @@ const RecipesCarousel = ({ onSelect }) => {
             placeholder="Search for Recipes, ingredients or blog posts"
             className="flex-grow rounded-lg border border-gray-300 px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF4B3E]"
             onChange={(e) => setInput(e.target.value)} id="searchBar"
+            onKeyDown={isEnter}
           />
           <button
             className="bg-[#FF4B3E] hover:bg-[#e04335] text-white font-semibold px-5 py-2 rounded-lg shadow-md transition-all duration-200 cursor-pointer hover:scale-[1.03]"
