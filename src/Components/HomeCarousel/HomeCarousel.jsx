@@ -6,36 +6,46 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const featuredItems = [
-  {
-    title: 'Veg Biryani',
-    description: 'Aromatic basmati rice cooked with vegetables and spices.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Veg_Biryani.jpg',
-    link: '/recipes/veg-biryani'
-  },
-  {
-    title: 'Paneer Tikka Wrap',
-    description: 'Grilled paneer wrapped with veggies in soft paratha.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Paneer_Tikka_Wrap.jpg',
-    link: '/recipes/paneer-wrap'
-  },
-  {
-    title: 'Masala Maggi',
-    description: 'Spiced instant noodles cooked with onions and peppers.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Masala_Maggi.jpg',
-    link: '/recipes/masala-maggi'
-  },
-  {
-    title: 'Aloo Paratha',
-    description: 'Crispy stuffed flatbread with spiced potato filling.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Aloo_paratha_with_curds_and_pickle.jpg',
-    link: '/recipes/aloo-paratha'
-  },
-  {
-    title: 'Chole Chawal',
-    description: 'North Indian-style spicy chickpeas served with rice.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Chole_chawal.jpg',
-    link: '/recipes/chole-chawal'
-  }
+    {
+        "id": 1,
+        "title": "Palak Paneer",
+        "shortDesc": "Spinach and cottage cheese curry.",
+        "fullDesc": "A classic North Indian dish made with fresh spinach, paneer, and mild spices. Best served with naan or rice.",
+        "image": "https://images.pexels.com/photos/8625948/pexels-photo-8625948.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "link":"/recipes"
+      },
+      {
+        "id": 2,
+        "title": "Chole Bhature",
+        "shortDesc": "Spicy chickpeas with fried bread.",
+        "fullDesc": "A Punjabi favorite featuring spicy chickpeas and fluffy deep-fried bread, perfect for a hearty brunch.",
+        "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "link":"/recipes"
+      },
+      {
+        "id": 3,
+        "title": "Vegetable Pulao",
+        "shortDesc": "Fragrant rice with mixed veggies.",
+        "fullDesc": "Aromatic basmati rice cooked with seasonal vegetables and mild spices for a light, satisfying meal.",
+        "image": "https://images.pexels.com/photos/15059063/pexels-photo-15059063.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "link":"/recipes"
+      },
+      {
+        "id": 4,
+        "title": "Paneer Butter Masala",
+        "shortDesc": "Creamy tomato-based paneer curry.",
+        "fullDesc": "Paneer cubes simmered in a rich, buttery tomato gravy with aromatic spices. A vegetarian favorite.",
+        "image": "https://images.pexels.com/photos/11188417/pexels-photo-11188417.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "link":"/recipes"
+      },
+      {
+        "id": 5,
+        "title": "Rajma Chawal",
+        "shortDesc": "Kidney beans curry with rice.",
+        "fullDesc": "Red kidney beans cooked in a spiced onion-tomato gravy served over steamed basmati rice.",
+        "image": "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "link":"/recipes"
+      }
 ];
 
 const HomeCarousel = () => {
@@ -79,7 +89,7 @@ const HomeCarousel = () => {
               />
               <div className="p-4">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600 mb-3">{item.description}</p>
+                <p className="text-sm text-gray-600 mb-3">{item.shortDesc}</p>
                 {item.link && (
                   <a
                     href={item.link}

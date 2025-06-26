@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import { marked } from 'marked';
 
 const RecipeDetail = ({ recipe }) => {
   const [visible, setVisible] = useState(true);
@@ -13,7 +13,7 @@ const RecipeDetail = ({ recipe }) => {
   if (!recipe || !visible) return null;
 
   return (
-    <div>
+    <div id='details'>
         
     <section className="px-6 md:px-20 py-12 bg-orange-50">
       <div className="flex justify-end mb-4">
@@ -32,7 +32,11 @@ const RecipeDetail = ({ recipe }) => {
           className="md:w-1/2"
         >
           <h3 className="text-3xl font-bold text-gray-800 mb-4">{recipe.title}</h3>
-          <p className="text-gray-700 text-lg leading-relaxed">{recipe.fullDesc}</p>
+          <p
+  className="text-gray-700 text-lg leading-relaxed"
+  dangerouslySetInnerHTML={{ __html: marked(recipe.fullDesc) }}
+/>
+         
         </motion.div>
         <motion.img
           src={recipe.image}

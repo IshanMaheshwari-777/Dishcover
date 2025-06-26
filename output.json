@@ -1,0 +1,214 @@
+[
+  {
+    "title": "Palak Paneer",
+    "image": "https://images.pexels.com/photos/8625948/pexels-photo-8625948.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chole Bhature",
+    "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Vegetable Pulao",
+    "image": "https://images.pexels.com/photos/15059063/pexels-photo-15059063.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Paneer Butter Masala",
+    "image": "https://images.pexels.com/photos/11188417/pexels-photo-11188417.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Aloo Gobi",
+    "image": "https://images.pexels.com/photos/5110972/pexels-photo-5110972.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Veg Biryani",
+    "image": "https://images.pexels.com/photos/7656390/pexels-photo-7656390.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Rajma Chawal",
+    "image": "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Kadhi Pakora",
+    "image": "https://images.pexels.com/photos/958547/pexels-photo-958547.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Baingan Bharta",
+    "image": "https://images.pexels.com/photos/13103383/pexels-photo-13103383.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Matar Paneer",
+    "image": "https://images.pexels.com/photos/8818667/pexels-photo-8818667.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Stuffed Capsicum",
+    "image": "https://images.pexels.com/photos/31970714/pexels-photo-31970714.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Dal Tadka",
+    "image": "https://images.pexels.com/photos/4595313/pexels-photo-4595313.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Mix Veg Curry",
+    "image": "https://images.pexels.com/photos/4198929/pexels-photo-4198929.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Vegetable Korma",
+    "image": "https://images.pexels.com/photos/32705892/pexels-photo-32705892.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Masala Dosa",
+    "image": "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Idli Sambar",
+    "image": "https://images.pexels.com/photos/14831540/pexels-photo-14831540.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Pav Bhaji",
+    "image": "https://images.pexels.com/photos/166653/pexels-photo-166653.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Dhokla",
+    "image": "https://images.pexels.com/photos/9738992/pexels-photo-9738992.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Sev Tamatar",
+    "image": "https://images.pexels.com/photos/984516/pexels-photo-984516.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Tandoori Mushroom",
+    "image": "https://images.pexels.com/photos/32702223/pexels-photo-32702223.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Veg Frankie",
+    "image": "https://images.pexels.com/photos/7656390/pexels-photo-7656390.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Rava Upma",
+    "image": "https://images.pexels.com/photos/20422138/pexels-photo-20422138.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Kathi Roll",
+    "image": "https://images.pexels.com/photos/29173104/pexels-photo-29173104.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Corn Chaat",
+    "image": "https://images.pexels.com/photos/32706019/pexels-photo-32706019.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Tandoori Aloo",
+    "image": "https://images.pexels.com/photos/1058035/pexels-photo-1058035.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Butter Chicken",
+    "image": "https://images.pexels.com/photos/20408432/pexels-photo-20408432.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Biryani",
+    "image": "https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Grilled Fish Tikka",
+    "image": "https://images.pexels.com/photos/4869328/pexels-photo-4869328.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Egg Curry",
+    "image": "https://images.pexels.com/photos/32083371/pexels-photo-32083371.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Tandoori Chicken",
+    "image": "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Fish Curry",
+    "image": "https://images.pexels.com/photos/18284773/pexels-photo-18284773.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Korma",
+    "image": "https://images.pexels.com/photos/10508207/pexels-photo-10508207.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Egg Biryani",
+    "image": "https://images.pexels.com/photos/9609843/pexels-photo-9609843.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Prawn Masala",
+    "image": "https://images.pexels.com/photos/32664528/pexels-photo-32664528.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken 65",
+    "image": "https://images.pexels.com/photos/32726582/pexels-photo-32726582.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Fish Fry",
+    "image": "https://images.pexels.com/photos/1123250/pexels-photo-1123250.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Keema Matar",
+    "image": "https://images.pexels.com/photos/7340914/pexels-photo-7340914.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Tikka",
+    "image": "https://images.pexels.com/photos/12737801/pexels-photo-12737801.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Egg Bhurji",
+    "image": "https://images.pexels.com/photos/32695303/pexels-photo-32695303.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Prawn Biryani",
+    "image": "https://images.pexels.com/photos/9609861/pexels-photo-9609861.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Shawarma",
+    "image": "https://images.pexels.com/photos/32640288/pexels-photo-32640288.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Tuna Sandwich",
+    "image": "https://images.pexels.com/photos/30910207/pexels-photo-30910207.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Crab Curry",
+    "image": "https://images.pexels.com/photos/20943892/pexels-photo-20943892.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Pakora",
+    "image": "https://images.pexels.com/photos/7353388/pexels-photo-7353388.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Fish Pulusu",
+    "image": "https://images.pexels.com/photos/32699308/pexels-photo-32699308.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Egg Roll",
+    "image": "https://images.pexels.com/photos/6294369/pexels-photo-6294369.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Noodles",
+    "image": "https://images.pexels.com/photos/4989392/pexels-photo-4989392.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Fish Moilee",
+    "image": "https://images.pexels.com/photos/32699308/pexels-photo-32699308.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Omelette Curry",
+    "image": "https://images.pexels.com/photos/9148242/pexels-photo-9148242.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chicken Soup",
+    "image": "https://images.pexels.com/photos/2532442/pexels-photo-2532442.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Spaghetti Aglio e Olio",
+    "image": "https://images.pexels.com/photos/14899491/pexels-photo-14899491.png?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Chickpea Salad Bowl",
+    "image": "https://images.pexels.com/photos/6066051/pexels-photo-6066051.jpeg?auto=compress&cs=tinysrgb&h=350"
+  },
+  {
+    "title": "Paneer Tikka Wrap",
+    "image": "https://images.pexels.com/photos/11974635/pexels-photo-11974635.jpeg?auto=compress&cs=tinysrgb&h=350"
+  }
+]
