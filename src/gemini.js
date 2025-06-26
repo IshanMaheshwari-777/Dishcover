@@ -11,10 +11,12 @@ export async function getDishDetails(dishName) {
 
     const prompt = `
 For the dish "${dishName}", provide:
-1. A complete list of ingredients with quantity
-2. A step-by-step recipe
-3. Approximate nutrition facts per serving (calories, protein, carbs, fat)
+1. Time needed to prepare and cook (in minutes)
+2. A complete list of ingredients with quantity
+3. A step-by-step recipe
+4. Approximate nutrition facts per serving (calories, protein, carbs, fat)
 Format the output with proper headings and line breaks.
+
 `;
 
     const result = await model.generateContent(prompt);
