@@ -4,11 +4,12 @@ import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
 import Recipes from './Pages/Recipes.jsx';  
 import Blog from './Pages/Blog.jsx';
+import ScrollToTop from './Components/ScrollToTop.jsx';
 
 function App() {
   return (
     <Router>
-      <div>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-      </div>
+      
     </Router>
   );
 }

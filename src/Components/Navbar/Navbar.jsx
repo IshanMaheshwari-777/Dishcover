@@ -69,7 +69,87 @@
 // export default Navbar;
 
 
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
+// import { NavLink } from 'react-router-dom';
+// import { motion } from 'framer-motion';
+// import logo from '../../assets/logo.png';
+// import {
+//   SignedIn,
+//   SignedOut,
+//   SignInButton,
+//   UserButton,
+//   SignUpButton,
+// } from '@clerk/clerk-react';
+
+// const Navbar = () => { 
+
+  
+
+//   return (
+//     <motion.nav
+//       initial={{ y: -60, opacity: 0 }}
+//       animate={{ y: 0, opacity: 1 }}
+//       transition={{ duration: 0.6 }}
+//       className="w-full bg-white  fixed top-0 left-0 z-10 py-3 shadow-md px-6 flex justify-between items-center"
+//     >
+//       <a href="/home">
+//         <motion.img
+//           src={logo}
+//           alt="Logo"
+//           className="w-24 hover:cursor-pointer"
+//           whileHover={{ scale: 1.05 }}
+//           transition={{ type: 'spring', stiffness: 300 }}
+//         />
+//       </a>
+
+//       <ul className="hidden md:flex gap-6">
+//         {[
+//           { name: 'Home', path: '/home' },
+//           { name: 'About', path: '/about' },
+//           { name: 'Recipes', path: '/recipes' },
+//           { name: 'Blog', path: '/blog' }
+//         ].map(({ name, path }) => (
+//           <motion.li
+//             key={path}
+//             whileHover={{ scale: 1.05 }}
+//             transition={{ type: 'spring', stiffness: 250 }}
+//           >
+//             <NavLink
+//               to={path}
+//               className={({ isActive }) =>
+//                 isActive
+//                   ? 'text-[#FF4B3E] border-b-2 border-[#FF4B3E] pb-1'
+//                   : 'text-gray-800  hover:text-[#FF4B3E] transition'
+//               }
+//             >
+//               {name}
+//             </NavLink>
+//           </motion.li>
+//         ))}
+//       </ul>
+
+//       <motion.div
+//         className="flex gap-4 items-center"
+//         initial={{ opacity: 0 }}
+//         animate={{ opacity: 1 }}
+//         transition={{ delay: 0.4 }}
+//       >
+        
+//         <SignedOut>
+//           <SignUpButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
+//           <SignInButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
+//         </SignedOut>
+//         <SignedIn>
+//           <UserButton />
+//         </SignedIn>
+//       </motion.div>
+//     </motion.nav>
+//   );
+// };
+
+// export default Navbar;
+
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../../assets/logo.png';
@@ -82,19 +162,21 @@ import {
 } from '@clerk/clerk-react';
 
 const Navbar = () => {
-  const [dark, setDark] = useState(() => localStorage.getItem('theme') === 'dark');
+  const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark);
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
-  }, [dark]);
+  const navItems = [
+    { name: 'Home', path: '/home' },
+    { name: 'About', path: '/about' },
+    { name: 'Recipes', path: '/recipes' },
+    { name: 'Blog', path: '/blog' }
+  ];
 
   return (
     <motion.nav
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="w-full bg-white dark:bg-gray-900 fixed top-0 left-0 z-10 py-3 shadow-md px-6 flex justify-between items-center"
+      className="w-full bg-white fixed top-0 left-0 z-10 py-3 shadow-md px-6 flex justify-between items-center"
     >
       <a href="/home">
         <motion.img
@@ -106,13 +188,9 @@ const Navbar = () => {
         />
       </a>
 
+      {/* Desktop Nav */}
       <ul className="hidden md:flex gap-6">
-        {[
-          { name: 'Home', path: '/home' },
-          { name: 'About', path: '/about' },
-          { name: 'Recipes', path: '/recipes' },
-          { name: 'Blog', path: '/blog' }
-        ].map(({ name, path }) => (
+        {navItems.map(({ name, path }) => (
           <motion.li
             key={path}
             whileHover={{ scale: 1.05 }}
@@ -123,7 +201,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? 'text-[#FF4B3E] border-b-2 border-[#FF4B3E] pb-1'
-                  : 'text-gray-800 dark:text-gray-100 hover:text-[#FF4B3E] transition'
+                  : 'text-gray-800 hover:text-[#FF4B3E] transition'
               }
             >
               {name}
@@ -132,18 +210,23 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/* Mobile Hamburger */}
+      <div className="md:hidden flex items-center">
+        <button
+          className="text-3xl text-gray-800 focus:outline-none mr-10"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? '✖' : '☰'}
+        </button>
+      </div>
+
+      {/* Auth Buttons (Always visible) */}
       <motion.div
-        className="flex gap-4 items-center"
+        className="hidden md:flex gap-4 items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
+        
       >
-        <button
-          onClick={() => setDark(!dark)}
-          className="p-2 rounded bg-gray-200 dark:bg-gray-700 text-sm"
-        >
-          {dark ? '🌙' : '☀️'}
-        </button>
         <SignedOut>
           <SignUpButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
           <SignInButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md" />
@@ -152,9 +235,35 @@ const Navbar = () => {
           <UserButton />
         </SignedIn>
       </motion.div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-start px-6 py-4 md:hidden z-50">
+          {navItems.map(({ name, path }) => (
+            <NavLink
+              key={path}
+              to={path}
+              onClick={() => setIsOpen(false)}
+              className="text-gray-800 py-2 w-full hover:text-[#FF4B3E] border-b border-gray-200"
+            >
+              {name}
+            </NavLink>
+          ))}
+          <div className="mt-4">
+            <SignedOut>
+              <SignUpButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md w-full mb-2" />
+              <SignInButton className="bg-[#FF4B3E] text-white px-4 py-2 rounded-lg shadow-md w-full" />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
+        </div>
+      )}
     </motion.nav>
   );
 };
 
 export default Navbar;
+
 

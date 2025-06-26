@@ -5,16 +5,28 @@ const faqs = [
   {
     question: 'How do I submit my own recipe?',
     answer:
-      'You can submit your recipe through our Contact page or the Share Recipe section (coming soon!).',
+      'We currently feature a comprehensive collection of recipes for all major dishes and are not accepting external submissions at this time.',
   },
   {
     question: 'Are all recipes vegetarian?',
-    answer: "Many recipes are vegetarian, but we will be expanding soon with filters for all preferences.",
+    answer: "Most recipes are vegetarian, but we will be expanding soon with filters for all preferences.",
   },
   {
     question: 'Is Dishcover free to use?',
     answer: 'Yes! Dishcover is free to access for everyone.',
   },
+  {
+    question: 'How do I search for a recipe?',
+    answer: `Simply search the name of the dish. and clicking a result shows the full recipe with ingredients and steps.`,
+  },
+  {
+    question: 'How accurate are the nutrition details?',
+    answer: 'Nutritional info is approximate and based on standard serving sizes. Actual values may vary depending on ingredients and portion size.',
+  },
+  {
+    question: 'Do I need to create an account to use the site?',
+    answer: 'You can explore recipes without an account, but to save favorites, access personalized features, or submit voice searches, we recommend signing in.',
+  }
 ];
 
 const FAQSection = () => {

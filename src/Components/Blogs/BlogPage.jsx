@@ -36,7 +36,7 @@ const BlogPage = () => {
         className="relative h-[28rem] md:h-[32rem] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1600')"
+            "url('https://images.pexels.com/photos/32083370/pexels-photo-32083370.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600')"
         }}
       >
         <motion.div
@@ -81,7 +81,7 @@ const BlogPage = () => {
                   Read More
                 </button>
               </div>
-            </motion.div>
+            </motion.div> 
           ))}
         </div>
       </section>
