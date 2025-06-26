@@ -48,7 +48,7 @@ const RecipesCarousel = ({ onSelect }) => {
             type="text"
             placeholder="Search for Recipes, ingredients or blog posts"
             className="flex-grow rounded-lg border border-gray-300 px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF4B3E]"
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value)} id="searchBar"
           />
           <button
             className="bg-[#FF4B3E] hover:bg-[#e04335] text-white font-semibold px-5 py-2 rounded-lg shadow-md transition-all duration-200 cursor-pointer hover:scale-[1.03]"

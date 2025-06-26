@@ -184,7 +184,7 @@ function DishSearch({ dishName, onSelect }) {
   if (!dishName) return null;
 
   return (
-    <div className="mt-6 px-6 md:px-20">
+    <div className="mt-6 px-6 md:px-20"  >
       {loading ? (
         <p className="text-gray-600">🔄 From Words to Wonders in Your Kitchen...</p>
       ) : error ? (
