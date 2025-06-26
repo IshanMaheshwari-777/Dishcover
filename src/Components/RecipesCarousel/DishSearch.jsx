@@ -18,7 +18,7 @@ function DishSearch({ dishName }) {
         setResult(res);
       } catch (err) {
         console.error("Gemini fetch error:", err);
-        setError('❌ Failed to fetch from Gemini. Please try again.');
+        setError('❌Failed to find recipe, Please try again later.');
       } finally {
         setLoading(false);
       }
@@ -32,7 +32,7 @@ function DishSearch({ dishName }) {
   return (
     <div className="mt-6 bg-gray-100 p-4 rounded max-w-2xl mx-auto">
       {loading ? (
-        <p className="text-gray-600">🔄 Fetching details from Gemini...</p>
+        <p className="text-gray-600">🔄 From Words to Wonders in Your Kitchen...</p>
       ) : error ? (
         <p className="text-red-600">{error}</p>
       ) : (
