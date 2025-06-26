@@ -22,7 +22,7 @@ const Searchbar = () => {
       >
         <div className="flex flex-col items-center">
           <span className="text-xl animate-bounce">▼</span>
-          <span className="text-base mt-1">Search Recipes by Ingredients</span>
+          <span className="text-base mt-1">Click here to Search Recipes.</span>
         </div>
       </button>
     </div>

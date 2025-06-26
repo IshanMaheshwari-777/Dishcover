@@ -213,7 +213,7 @@ const Navbar = () => {
       {/* Mobile Hamburger */}
       <div className="md:hidden flex items-center">
         <button
-          className="text-3xl text-gray-800 focus:outline-none mr-10"
+          className="text-3xl text-gray-800 focus:outline-none mr-7"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? '✖' : '☰'}
