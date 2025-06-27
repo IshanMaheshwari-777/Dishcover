@@ -2,8 +2,20 @@
 import React from 'react';
 import heroImg from '../../assets/hero.png';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [showMessage, setShowMessage] = useState(false);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    setShowMessage(true); 
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 4000);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -41,8 +53,8 @@ const Hero = () => {
         className="max-w-md mt-10 md:mt-0 md:ml-10 bg-black/70 backdrop-blur-sm p-6 rounded-xl shadow-2xl border border-gray-700"
       >
         <h2 className="text-2xl font-semibold text-white mb-6">Get in Touch</h2>
-        <form className="space-y-4">
-          <input
+        <form className="space-y-4" onSubmit={handleSubmit}>
+        <input
             type="text"
             placeholder="Your Name"
             className="w-full rounded-lg px-4 py-3 border border-gray-500 text-white placeholder-gray-400 bg-transparent focus:ring-2 focus:ring-[#FF4B3E] focus:outline-none"
@@ -67,6 +79,11 @@ const Hero = () => {
             Send Message
           </button>
         </form>
+        {showMessage && (
+        <div className="mt-4 text-green-400 font-medium text-center animate-fade-in">
+          🍽️ Thank you! We have received your message.
+        </div>)}
+        
       </motion.div>
     </motion.div>
   );
