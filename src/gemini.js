@@ -1,13 +1,13 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-
-const API_KEY = "AIzaSyCYTYnTpDyLePCG9ODmppkmjSZkSkJAYJA"; // okay for dev
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+// const API_KEY = "AIzaSyCYTYnTpDyLePCG9ODmppkmjSZkSkJAYJA"; // okay for dev
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export async function getDishDetails(dishName) {
   try {
-    const model = genAI.getGenerativeModel({model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({model: "models/gemini-1.5-flash" });
 
     const prompt = `
 For the dish or ingredients "${dishName}", provide:
