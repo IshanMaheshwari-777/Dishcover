@@ -6,7 +6,6 @@ const RecipeDetail = ({ recipe }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    // Reset visibility whenever a new recipe is passed
     setVisible(true);
   }, [recipe]);
 
@@ -23,7 +22,7 @@ const RecipeDetail = ({ recipe }) => {
         <button
           onClick={() => setVisible(false)}
           className="px-4 py-1 bg-red-500 text-white rounded hover:bg-red-600 cursor-pointer"
-          
+
         >
           Close
         </button>

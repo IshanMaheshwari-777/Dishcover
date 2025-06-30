@@ -23,7 +23,6 @@ async function fetchPexelsImage(query) {
     console.error('Pexels fetch error:', err);
   }
 
-  // Fallback placeholder
   return `https://via.placeholder.com/600x400?text=${encodeURIComponent(query)}`;
 }
 

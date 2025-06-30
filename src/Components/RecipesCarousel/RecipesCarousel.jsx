@@ -47,7 +47,7 @@ const RecipesCarousel = ({ onSelect }) => {
   }
   return (
     <div>
-      {/* Search Bar */}
+     
       <div className="px-6 md:px-20 py-4 bg-white shadow-md">
         <div className="flex items-center gap-2 mt-2">
           <input
@@ -65,7 +65,7 @@ const RecipesCarousel = ({ onSelect }) => {
           </button>
         </div>
 
-        {/* Search Result Below Search Bar */}
+      
         {show && (
           <div className="mt-6">
             {filtered.length > 0 ? (
@@ -93,7 +93,7 @@ const RecipesCarousel = ({ onSelect }) => {
         )}
       </div>
 
-      {/* Carousel Section */}
+      
       <section className="py-16 px-6 md:px-20 bg-white">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Popular Recipes</h2>
         <div className="flex overflow-x-auto space-x-6 scrollbar-hide">

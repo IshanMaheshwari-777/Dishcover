@@ -129,7 +129,6 @@ const users = [
               <p className="text-sm text-gray-500 mb-2">{member.role}</p>
               <h4 className="text-lg font-semibold text-gray-800">{member.name}</h4>
               
-              {/* <p className="text-sm text-gray-600">{member.bio}</p> */}
             </motion.div>
           </SwiperSlide>
         ))}

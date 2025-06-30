@@ -4,7 +4,7 @@ import foodRecipe from '../../assets/foodRecipe.png';
 const AboutHero = () => {
   return (
     <section className="pt-32 md:pt-36 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between pb-20 px-6 md:px-20 gap-12 md:gap-20 bg-gradient-to-br from-white to-orange-50 overflow-hidden">
-      {/* Text Content */}
+
       <motion.div
         className="w-full md:w-1/2 text-center md:text-left"
         initial={{ opacity: 0, x: -60 }}
@@ -23,7 +23,6 @@ const AboutHero = () => {
         </p>
       </motion.div>
 
-      {/* Image */}
       <motion.div
         className="w-full md:w-1/2 flex justify-center"
         initial={{ opacity: 0, x: 60 }}

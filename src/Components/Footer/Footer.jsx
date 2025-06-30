@@ -12,7 +12,7 @@ const Footer = () => {
       className="bg-gray-900 text-white py-12"
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-        {/* Quick Links */}
+       
         <div>
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
@@ -29,7 +29,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Us */}
         <div>
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
           <ul className="space-y-2 text-gray-400">
@@ -38,7 +37,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Follow Us */}
         <div>
           <h3 className="text-lg font-bold mb-4">Follow Us</h3>
           <div className="flex gap-4 text-gray-400 text-xl">
@@ -50,7 +48,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="text-center text-gray-500 mt-12 border-t border-gray-700 pt-6">
         © 2025 Dishcover. All rights reserved.
       </div>

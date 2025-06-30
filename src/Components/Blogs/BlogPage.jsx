@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Blog posts data
 const blogPosts = [
   {
     title: 'Why Cooking at Home Wins Every Time',
@@ -31,7 +30,7 @@ const fadeInUp = {
 const BlogPage = () => {
   return (
     <div className="bg-white">
-      {/* Hero Section */}
+     
       <section
         className="relative h-[28rem] md:h-[32rem] bg-cover bg-center"
         style={{
@@ -54,7 +53,6 @@ const BlogPage = () => {
         </motion.div>
       </section>
 
-      {/* Blog Cards */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post, index) => (
