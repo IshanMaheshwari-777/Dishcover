@@ -14,7 +14,7 @@ For the dish or ingredients "${dishName}", provide:
 2. A complete list of ingredients with quantity
 3. A step-by-step recipe
 4. Approximate nutrition facts per serving (calories, protein, carbs, fat)
-Format the output with proper headings and line breaks.
+ Format the output with proper line breaks, section headers, and visual clarity. Avoid long paragraphs. Make it visually engaging and easy to scan for a casual user. Use emojis or formatting (like bold or bullets) to improve readability.
 
 `;
 
