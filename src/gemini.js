@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 
 export async function getDishDetails(dishName) {
   try {
-    const model = genAI.getGenerativeModel({model: "models/gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({model: "models/gemini-2.5-flash" });
 
     const prompt = `
 For the dish or ingredients "${dishName}", provide:
